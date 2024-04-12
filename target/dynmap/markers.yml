@@ -1,0 +1,26 @@
+%YAML 1.1
+---
+isSafe: true
+icons:
+    towny_town_icon:
+        label: towny_town_icon
+    towny_capital_icon:
+        label: towny_capital_icon
+    towny_outpost_icon:
+        label: towny_outpost_icon
+sets:
+    markers:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Markers
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
+playersets: {
+    }

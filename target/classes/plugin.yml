@@ -1,0 +1,79 @@
+name: AstraCore
+version: '1'
+main: dev.loveeev.astracore.Main
+api-version: '1.16'
+softdepend: [ItemsLangApi]
+website: https://astraworld.su
+depend: [Towny, Vault]
+commands:
+  ah:
+    description: ah
+    aliases:
+      - market
+  telegraph:
+    description: telegraph
+  menu:
+    description: menu
+  technologies:
+    description: technologies
+    aliases:
+      - tech
+      - technolog
+      - techno
+      - ntech
+  astraWars:
+    permission: admin.build
+    usage: /astraWars
+  warinfo:
+    description: warinfo
+  zreload:
+    description: reload plugin
+    permission: admin.reload
+  provinces:
+    description: provinces
+    aliases:
+      - tbuy
+      - buytown
+      - townbuy
+  teleportmenu:
+    description: teleportmenu
+    permission: admin.reload
+  zp:
+    description: zp
+    permission: aw.admin
+  nlist:
+    description: nlist/
+  sell:
+    description: sell
+  donate:
+    description: donate
+    aliases:
+      - d
+  adminbonus:
+    description: bonus
+    permission: admin.bonus
+  crafts:
+    description: custom craft
+  event:
+    permission: admin.build
+    description: event
+  warproc:
+    description: warproc
+    permission: admin.build
+  mailmenu:
+    description: mail
+  order:
+    description: order
+  rebuild:
+    description: rebuild
+permissions:
+  admin.build:
+    default: op
+  aw.admin:
+    default: op
+  admin.reload:
+    default: op
+  admin.bonus:
+    default: op
+  yourplugin.rebuild:
+    default: op

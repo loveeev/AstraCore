@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<project name="ZimoxyTownyAddons" default="ProductionBuild">
+
+	<property name="server.path" value="C:\MCServers\TestServer1.16"/>
+
+	<xmlproperty file="pom.xml" prefix="pom" keeproot="false" />
+	<property name="foundation.version" value="${pom.properties.foundation.version}"/>
+	<property name="plugin.version" value="${pom.version}"/>
+
+	<target name="init">
+		<buildnumber/>
+	</target>
+
+	<!-- Test Build is only for testing purpose. Does not relocate libraries but HotSwap works fine. -->
+	<target name="TestBuild">
+		<delete>
+			<fileset dir="${server.path}/plugins/" includes="${ant.project.name}*"/>
+		</delete>
+		<buildnumber/>
+		<jar jarfile="${server.path}/plugins/${ant.project.name}-${plugin.version}-b${build.number}.jar" basedir="./target/classes/" includes="**/*">
+			<zipgroupfileset dir="${user.home}/.m2/repository/com/github/Rubix327/Foundation/${foundation.version}/" includes="**/*${foundation.version}.jar" />
+			<zipgroupfileset dir="${user.home}/.m2/repository/com/samjakob/SpiGUI/v1.3/" includes="**/*v1.3.jar" />
+		</jar>
+	</target>
+
+	<!-- Production Build. Compiles java files and relocates libraries. HotSwap does not work here. -->
+	<target name="ProductionBuild">
+		<delete>
+			<fileset dir="${server.path}/plugins/" includes="${ant.project.name}*"/>
+		</delete>
+		<buildnumber/>
+		<copy file="./target/${ant.project.name}-${plugin.version}.jar"
+			  tofile="${server.path}/plugins/${ant.project.name}-${plugin.version}-b${build.number}.jar"/>
+	</target>
+
+</project> 

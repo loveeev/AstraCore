@@ -1,0 +1,292 @@
+#Config made developer @loveeev
+#For plugins to work correctly, do not touch the names of variables
+#Company INC: ASTRAWORLD
+Version: 1
+Locale: en
+
+not_in_town_message: "&cВы больше не состоите в городе."
+
+sell_item_lore:
+  - 'Цена: %price%'
+  - 'Продавец: %player%'
+#Стиль бара
+barstyle: SOLID
+#Цена покупки города.
+townprice: 100
+#Время на захват города
+timeforoccuoation: 300
+#Процент захвата нации в городах
+capitulationpercent: 70
+#Включить и выклчить смерть навсегда если true то в будке
+deathonwar: true
+#Время нахождеия в будке при войне в секундах
+timewar: 300
+#Префикс сообщений для войн
+prefix: §x§f§f§d§a§a§4§lASTRAADMIN §8▹ §f
+#Префикс сообщений для игроков
+prefixplayer: §x§f§f§d§a§a§4§lASTRA §8▹ §f
+#Запрещенные команда через запятую
+forbiddencommands: ''
+#Монетный двор
+moneyyard: 10
+#Маркет за виртуальную валюту - false
+marketmoney: true
+
+
+
+
+
+
+
+#DATABASE ONLY MYSQL;
+#DATABASE PASSWORD
+mysql_password: ''
+#DATABASE USERNAME
+mysql_username: ''
+#DATABASE NAME
+mysql_database: ''
+#DATABASE HOST
+mysql_host: ''
+
+#Цена на сектора
+#Аграрный
+priceagrar: 100.0
+#Лесной
+lessector: 100.0
+#Метал
+metalsector: 100.0
+
+
+#Цена продажа фермы:
+#-----------------------------С/Х ТОВАРЫ---------------------------------
+#Продажа пшеницы
+sell_wheat: 11.0
+#Продажа моркови
+sell_carrot: 5.0
+#Продажа картошки
+sell_potato: 5.0
+#Продажа семена пшеницы
+sell_seed: 5.0
+#Продажа яблоко
+sell_beetroot: 10.0
+#Продажа сладкие ягоды
+sell_sweet: 5.0
+#-----------------------------Мясо----------------------------------------
+#Продажа говядина
+sell_beef: 7.0
+#Продажа баранина
+sell_mutton: 7.0
+#Продажа курятина
+sell_chick: 7.0
+#Продажа свинина
+sell_sn: 7.0
+
+#---------------------------ЗДАНИЯ-------------------------------------------------------
+#Описание (лишние строчки оставляй пустыми)
+#Название
+#Военный завод
+#Название
+namewar: "&#FFDAA4Военный завод"
+lorewar:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+#Военный завод+
+#Здесь скидка на производство в премиум заводе. В ФОРМАТЕ X.X
+premium_town_discount: 1.5
+#Название
+namewarp: "&#FFDAA4Военный завод+"
+lorewarprem:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#ПОРТ
+#Название
+nameport: "&#FFDAA4Порт"
+loreport:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#БАНК
+#Сколько выдается монет в банке. В ФОРМАТЕ X.X
+bank_coins: 5.0
+#Название
+namebank: "&#FFDAA4Банк"
+lorebank:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Телеграф
+#Название
+namet: "&#FFDAA4Телеграф"
+loret:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Предприятия
+#Сколько монет выдается в Предприятие В ФОРМАТЕ X.X
+pred_coins: 30.0
+#Название
+namep: "&#FFDAA4Предприятия"
+lorepred:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Спец-проект
+#Название
+namespec: "&#FFDAA4Спец-проект"
+lorespec:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Ферма
+#Название
+namefarm: "&#FFDAA4Ферма"
+lorefarm:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Сталелитейный завод
+steelname: "&#FFDAA4Сталетейный завод"
+ironamount: 7
+coalamount: 5
+steellore:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Текстильная фабрика
+fabricname: "&#FFDAA4Текстильная фабрика"
+fabriclore:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Монетный двор
+yardname: "Монетный двор"
+yardlore:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Нефтеперерабатывающий завод
+namefuelcraft: "&#FFDAA4Нефтеперерабатывающий завод"
+lorefuelcraft:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#Цена за один чернильный мешочек
+inkprice: 10.0
+#Нефтяная станция
+namefuel: "&#FFDAA4Нефтяная станция"
+lorefuel:
+  - 'Для покупки вам нужно построить здание и обратиться к администрации.'
+
+#---------------/SELL--------------------
+#Продажа золота цена за штуку.
+pricegold: 5
+#АЛМАЗЫ
+itema: DIAMOND
+pricea: 10.0
+amounta: 5
+#ИЗУМРУДЫ
+iteme: EMERALD
+pricee: 10.0
+amounte: 5
+#ЗОЛОТО
+itemg: GOLD_INGOT
+priceg: 10.0
+amountg: 5
+#ЖЕЛЕЗОf
+itemiron: IRON_INGOT
+priceiron: 10.0
+amountiron: 5
+#медь
+pricecopper: 1
+amountcopper: 8
+#Еловые доски
+priceeli: 10.0
+amounteli: 5
+#береза
+priceber: 10.0
+amountberez: 5
+#тропика
+pricetropic: 10.0
+amounttropic: 5
+#акация
+priceaca: 10.0
+amountaca: 5
+#негр
+priceniga: 10.0
+amountniga: 5
+#дуб
+pricedub: 10.0
+amountdub: 5
+#БУЛЫЖНИК
+itemcobl: COBBLESTONE
+pricecobl: 10.0
+amountcobl:  10
+
+#--------------------ТРАНСПОРТ-----------------
+#Танки
+#T1
+pricetank1: 75.0
+#T2
+pricetank2: 100.0
+#T3
+pricetank3: 150.0
+#Поезда
+#T1
+pricetrain1: 75.0
+#T2
+pricetrain2: 100.0
+#T3
+pricetrain3: 150.0
+#Самолеты
+#T1
+priceplane1: 75.0
+#T2
+priceplane2: 100.0
+#T3
+priceplane3: 150.0
+#Верфь
+#T1
+priceverf1: 75.0
+#T2
+priceverf2: 100.0
+#T3
+priceverf3: 150.0
+#Тяжелый
+#T1 tractor + грузовик
+pricekg1: 75.0
+#T2 tractor + грузовик
+pricekg2: 100.0
+#T3 tractor + грузовик
+pricekg3: 150.0
+#T1 drill
+pricedrill1: 75.0
+#T2 drill
+pricedrill2: 100.0
+#T3 drill
+pricedrill3: 150.0
+#Легкий
+#T1 CAR
+priceez1: 75.0
+#T2 CAR
+priceez2: 100.0
+#T3 CAR
+priceez3: 150.0
+#T1 BIKE
+pricebike1: 75.0
+#T2 BIKE
+pricebike2: 100.0
+#T3 BIKE
+pricebike3: 150.0
+
+
+#КИТЫ
+kitsitempvp:
+  - IRON_CHESTPLATE
+  - IRON_HELMET
+  - IRON_LEGGINS
+  - IRON_BOOTS
+  - IRON_SWORD
+  - WOOD_AXE
+  - COOKED_BEEF
+  - GOLDEN_APPLE
+  - SHIELD
+#Кит пвп два
+kitsitempvptwo:
+  - COOKED_BEEF
+  - DIAMOND_CHESTPLATE
+  - DIAMOND_LEGGINS
+  - DIAMOND_BOOTS
+  - DIAMOND_SWORD
+  - DIAMOND_AXE
+  - DIAMOND_HELMET
+  - ENCHANTED_GOLDEN_APPLE
+  - SHIELD

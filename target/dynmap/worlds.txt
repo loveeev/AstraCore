@@ -1,0 +1,56 @@
+# These are examples of world-specific settings - customize your content as you see fit
+#
+# NOTES:
+#   All lines here are commented with the # symbol - delete the # symbol on copied lines you wish to enable
+#   Definitions of a world made here will superecede any world definition with the same name in configuration.txt
+#   Deleting this file will result in a fresh copy being produced by dynmap.jar on the next startup.
+#
+worlds:
+  # Worlds can be handled by templates, based on world type
+  # You can override the properties of the template by specifying them in this section
+  #    for example 'Title: "My Awesome World"'
+  - name: world
+    title: "ASTRAWORLD"
+    extrazoomout: 3
+    maps:
+      - class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: "Flat"
+        prefix: flat
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 1
+  # To just label world, and inherit rest from template, just provide name and title
+  #- name: world2
+  #  title: "Second World"
+  #
+  #- name: nether
+  #  title: "Nether"
+  #  center:
+  #    x: 0
+  #    y: 64
+  #    z: 0
+  #  # Number of extra zoom-out levels for world (each level is twice as big as the previous one)
+  #  extrazoomout: 3
+  #  maps:
+  #    - class: org.dynmap.hdmap.HDMap
+  #      name: flat
+  #      title: "Flat"
+  #      prefix: flat
+  #      perspective: iso_S_90_lowres
+  #      shader: stdtexture
+  #      lighting: nethershadows
+  #      # Map background color (day or night)
+  #      background: "#300806"
+  #      mapzoomin: 1
+  #    - class: org.dynmap.hdmap.HDMap
+  #      name: surface
+  #      title: "Surface"
+  #      prefix: surface
+  #      perspective: iso_SE_30_hires
+  #      shader: stdtexture
+  #      lighting: nethershadows
+  #      # Map background color (day or night)
+  #      background: "#300806"
+  #      mapzoomin: 1
